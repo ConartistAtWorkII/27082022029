@@ -1,0 +1,64 @@
+@import "../assets/config.scss";
+
+.user-info {
+  .occupation {
+    font-size: 12px;
+    color: $text-gray;
+  }
+  .wrapper {
+    padding: 14px 14px 0 17px;
+  }
+  .introduction {
+    position: relative;
+    height: 100%;
+    min-height: 124px;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+  .container {
+    margin-top: 10px;
+    margin-left: 89px;
+    z-index: 0;
+  }
+  .full-name, .occupation {
+    padding-left: 45px;
+    display: block;  
+  }
+
+  .full-name {
+    margin-bottom: 5px;
+  }
+  .occupation {
+    margin-bottom: 7px;
+  }
+  .about-me {
+    background-color: $light-yellow;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    padding: 5px 14px 5px 45px;
+    line-height: 21px;
+  }
+  // .about-me span {
+  //   // display: block;
+  // }
+}
+
+.avatar {
+  position: absolute;
+  left: 0;
+  width: 124px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-me {
+    background-color: $light-yellow;
+    border: 1px solid #DADADA;
+    padding-right: 5px;
+  }
+}

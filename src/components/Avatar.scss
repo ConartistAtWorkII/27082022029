@@ -1,0 +1,10 @@
+@import "../assets/config.scss";
+
+.avatar {
+  width: 124px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
