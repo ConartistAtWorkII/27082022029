@@ -29,6 +29,10 @@ $text-gray: #808080;
   padding: 0 20px;
 }
 
+span {
+  display: block;
+}
+
 img, a {
   display: block;
 }
@@ -59,3 +63,13 @@ ul {
   list-style: none;
   display: flex;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex.center {
+  justify-content: center;
+} 

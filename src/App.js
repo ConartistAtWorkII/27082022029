@@ -1,5 +1,6 @@
 import './App.css';
 import UserInfo from './components/UserInfo';
+import Comments from './components/Comments';
 
 function App() {
   return (
