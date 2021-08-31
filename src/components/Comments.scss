@@ -42,6 +42,19 @@
     margin-bottom: 15px;
   }
 
+  .upper-section button{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    font-size: 14px;
+    color: $link-blue;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+  }
+
   .user-name {
     font-size: 14px;
     font-weight: bold;
@@ -87,6 +100,16 @@
     border-top: none;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #c4cbcf;
+  }
+
+  .triangle-bottom {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: -7px;
+    border-top: none;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $comment-blue;
   }
 
 

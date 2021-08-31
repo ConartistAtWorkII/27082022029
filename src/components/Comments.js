@@ -51,6 +51,7 @@ function Comments() {
       </div>
       <div className="entry-content">
         <div className="triangle-right"></div>
+        <div className="triangle-bottom"></div>
         <p>{item.content}</p>
       </div>
     </div>)
@@ -61,7 +62,7 @@ function Comments() {
         <div className="flex upper-section">
           <div className="item first">
             <h1>Последние отзывы</h1>
-            <a>Все отзывы</a>
+            <button>Все отзывы</button>
           </div>
           <div className="item second">
             <span className="like-count">
@@ -82,6 +83,7 @@ function Comments() {
             </div>
             <div className="entry-content">
               <div className="triangle-right"></div>
+              <div className="triangle-bottom"></div>
               <p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
             </div>
           </div>
@@ -92,6 +94,7 @@ function Comments() {
             </div>
             <div className="entry-content">
               <div className="triangle-right"></div>
+              <div className="triangle-bottom"></div>
               <p>
                 Вероника, здравствуйте! Есть такой вопрос: 
                 Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный 
@@ -106,6 +109,7 @@ function Comments() {
             </div>
             <div className="entry-content">
               <div className="triangle-right"></div>
+              <div className="triangle-bottom"></div>
               <p>
                 Вероника, здравствуйте! Есть такой вопрос: 
                 Особый вид куниц жизненно стабилизирует кинетический момент?
