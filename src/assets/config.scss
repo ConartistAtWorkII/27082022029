@@ -22,6 +22,7 @@ $text-gray: #808080;
   width: 100%;
   max-width: 720px;
   margin: auto;
+  position: relative;
 }
 
 .wrapper{
@@ -54,6 +55,10 @@ h2 {
   font-size: 14px;
 }
 
+h1, h2, p, span, button {
+  color: $light-black;
+}
+
 p {
   font-size: 14px;
   line-height: 19px;
@@ -73,3 +78,7 @@ ul {
 .flex.center {
   justify-content: center;
 } 
+
+.hidden {
+  display: none;
+}

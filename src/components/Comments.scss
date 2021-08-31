@@ -1,5 +1,145 @@
 @import "../assets/config.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 .comments {
+  h1, span, a, img {
+    display: inline-block;
+  }
+  h1 {
+    margin-right: 10px;
+  }
+  a {
+    color: $link-blue;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  img {
+    width: 12px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+    vertical-align: middle;
+  }
+  span {
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  .flex {
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  .item.second {
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+  .like-count {
+    margin-right: 20px;
+  }
+  .entry {
+    margin-bottom: 20px;
+  }
+
+  .entry-info {
+    margin-bottom: 15px;
+  }
+
+  .user-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: $light-black;
   
+  }
+
+  .entry-content {
+    position: relative;
+    background-color: $comment-blue;
+    border: 1px solid #c4cbcf;
+    padding: 15px 15px 15px 20px;
+    box-shadow: 0 4px 10px #c4cbcf1a;
+    overflow-wrap: break-word;
+  }
+
+  .entry-content:before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: -9px;
+    border-top: none;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #c4cbcf;
+  }
+
+  .entry-content:after {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: -8px;
+    border-top: none;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $comment-blue;
+  }
+
+  .triangle-right {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: -10.5px;
+    border-top: none;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #c4cbcf;
+  }
+
+
+  .date {
+    font-size: 11px;
+    color: $text-gray;
+  }
+
+  .entry-input {
+    background-color: $background-gray;
+  }
+
+  .entry-input .wrapper {
+    padding: 28px 20px 30px;
+  }
+
+  .form button {
+    display: block;
+    width: 100%;
+    max-width: 281px;
+    margin: auto;
+    padding: 14px 0;
+    border: none;
+    border-radius: 23px;
+    background-color: $yellow;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+    cursor: pointer;
+  }
+  .form button:hover {
+    opacity: 0.9;
+  }
+  .form .container {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 17px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+  }
+  textarea {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;       
+    resize: none;
+    outline: none;
+    -moz-appearance: none;
+    height: 62px;
+    font-size: 14px;
+    color: #333333;
+  }
 }

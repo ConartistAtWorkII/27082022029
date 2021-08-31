@@ -8,7 +8,7 @@ function UserInfo() {
       <div className="wrapper">
         <div className="introduction">
           <div className="avatar">
-            <img src={AvatarImg} alt="" />
+            <img src={AvatarImg} alt="Avatar"/>
           </div>
           <div className="container">
             <h1 className="full-name">Вероника Ростова</h1>
@@ -35,7 +35,7 @@ function UserInfo() {
                 <div className="chart-bar second">
                   <span>Пакетные туры</span>
                 </div>
-                <div className="service-count">
+                <div className="service-count manual">
                   <span>3</span>
                 </div>
               </div>
@@ -43,7 +43,7 @@ function UserInfo() {
                 <div className="chart-bar third">
                   <span>Отели</span>
                 </div>
-                <div className="service-count">
+                <div className="service-count manual">
                   <span>1</span>
                 </div>
               </div>
