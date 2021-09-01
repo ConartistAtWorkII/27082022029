@@ -5,7 +5,7 @@ import CommentIcon from "../imgs/comment.jpg"
 
 function Comments() {
   const [entries, setEntries] = useState([])
-  const [message, setMessage] = useState(" ")
+  const [message, setMessage] = useState("")
 
   let newEntries = entries
 
@@ -54,10 +54,12 @@ function Comments() {
         <span className="user-name">{item.user}</span>
         <span className="date">{item.date}</span>
       </div>
-      <div className="entry-content">
-        <div className="triangle-right"></div>
-        <div className="triangle-bottom"></div>
-        <p>{item.content}</p>
+      <div className="container">
+        <div className="entry-content">
+          <p>{item.content}</p>
+          <div className="triangle-right"></div>
+          <div className="triangle-bottom"></div>
+        </div>
       </div>
     </div>)
 
@@ -86,10 +88,12 @@ function Comments() {
               <span className="user-name">Самуил</span>
               <span className="date">13 октября 2011</span>
             </div>
-            <div className="entry-content">
+            <div className="container">
+              <div className="entry-content">
+                <p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+              </div>
               <div className="triangle-right"></div>
               <div className="triangle-bottom"></div>
-              <p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
             </div>
           </div>
           <div className="entry">
@@ -97,14 +101,16 @@ function Comments() {
               <span className="user-name">Лилия Семёновна</span>
               <span className="date">14 октября 2011</span>
             </div>
-            <div className="entry-content">
-              <div className="triangle-right"></div>
-              <div className="triangle-bottom"></div>
-              <p>
-                Вероника, здравствуйте! Есть такой вопрос: 
-                Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный 
-                центр огранки алмазов и торговли бриллиантами?
-              </p>
+            <div className="container">
+              <div className="entry-content">
+                <p>
+                  Вероника, здравствуйте! Есть такой вопрос: 
+                  Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный 
+                  центр огранки алмазов и торговли бриллиантами?
+                </p>
+                <div className="triangle-right"></div>
+                <div className="triangle-bottom"></div>
+              </div>
             </div>
           </div>
           <div className="entry">
@@ -112,13 +118,15 @@ function Comments() {
               <span className="user-name">Лилия Семёновна</span>
               <span className="date">14 октября 2011</span>
             </div>
-            <div className="entry-content">
-              <div className="triangle-right"></div>
-              <div className="triangle-bottom"></div>
-              <p>
-                Вероника, здравствуйте! Есть такой вопрос: 
-                Особый вид куниц жизненно стабилизирует кинетический момент?
-              </p>
+            <div className="container">
+              <div className="entry-content">
+                <p>
+                  Вероника, здравствуйте! Есть такой вопрос: 
+                  Особый вид куниц жизненно стабилизирует кинетический момент?
+                </p>
+                <div className="triangle-right"></div>
+                <div className="triangle-bottom"></div>
+              </div>
             </div>
           </div>
           {entryItems}

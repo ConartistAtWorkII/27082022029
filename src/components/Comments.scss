@@ -66,7 +66,6 @@
   }
 
   .entry-content {
-    position: relative;
     background-color: $comment-blue;
     border: 1px solid #c4cbcf;
     padding: 15px 15px 15px 20px;
@@ -75,21 +74,25 @@
     white-space: pre-wrap;
   }
 
-  .entry-content:before {
-    content: "";
+  .entry .container {
+    position: relative;
+  }
+
+  .entry .container:before {
+    content:"";
     position: absolute;
     left: 22px;
-    top: -9px;
+    top: -8px;
     border-top: none;
     border-right: 9px solid transparent;
     border-bottom: 9px solid #c4cbcf;
   }
 
-  .entry-content:after {
-    content: "";
+  .entry .container:after {
+    content:"";
     position: absolute;
     left: 23px;
-    top: -8px;
+    top: -7px;
     border-top: none;
     border-right: 8px solid transparent;
     border-bottom: 8px solid $comment-blue;
@@ -99,7 +102,7 @@
     content: "";
     position: absolute;
     left: 22px;
-    top: -10.5px;
+    top: -9.5px;
     border-top: none;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #c4cbcf;
@@ -109,7 +112,7 @@
     content: "";
     position: absolute;
     left: 23px;
-    top: -7px;
+    top: -6px;
     border-top: none;
     border-right: 8px solid transparent;
     border-bottom: 8px solid $comment-blue;
