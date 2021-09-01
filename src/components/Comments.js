@@ -14,7 +14,7 @@ function Comments() {
   const addEntry = () => {
     let messageCopy = message
     if (messageCopy == null ||
-      messageCopy.match(/^ *$/) !== null) {
+      messageCopy.match(/^\s*$/) !== null) {
       setMessage("")
     }
     else {
