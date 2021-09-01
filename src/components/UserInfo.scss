@@ -60,7 +60,8 @@
     margin-bottom: 5px;
   }
   .column-name, .service-count {
-    flex: 0 0 25%;
+    flex: 0 0 31%;
+    max-width: 119px;
   }
   .column-name, .row.lower .service-count {
     text-align: center;
@@ -132,14 +133,19 @@
     padding-right: 5px;
   }
 }
-@media (max-width: 359px) {
+@media (max-width: 379px) {
   .stats {
     .column-name, .service-count {
       flex: 0 0 24%;
     }
   }
+  // .stats {
+  //   .chart-bar span {
+  //     white-space: normal;
+  //   }
+  // }
 }
-@media (max-width: 350px) {
+@media (max-width: 358px) {
   .stats {
     .chart-bar span {
       white-space: normal;
