@@ -1,6 +1,6 @@
 @import "../assets/config.scss";
 
-.user-info {
+.seller-info {
   margin-bottom: 22px;
   .occupation {
     font-size: 12px;
@@ -53,6 +53,8 @@
   }
 }
 
+
+/**Graph Styling**/
 .stats {
   margin-left: 134px;
   margin-right: 3px;
@@ -113,8 +115,8 @@
   .row.middle .service-count span {
     width: 15px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 52%;
+    transform: translateX(-52%);
     text-align: right;
     padding: 0;
   }
@@ -139,11 +141,6 @@
       flex: 0 0 24%;
     }
   }
-  // .stats {
-  //   .chart-bar span {
-  //     white-space: normal;
-  //   }
-  // }
 }
 @media (max-width: 358px) {
   .stats {

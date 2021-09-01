@@ -1,10 +1,10 @@
 import React from 'react'
 import AvatarImg from "../imgs/avatar.jpg"
-import './UserInfo.scss'
+import './SellerInfo.scss'
 
-function UserInfo() {
+function SellerInfo() {
   return (
-    <section className="user-info">
+    <section className="seller-info">
       <div className="wrapper">
         <div className="introduction">
           <div className="avatar">
@@ -59,4 +59,4 @@ function UserInfo() {
   )
 }
 
-export default UserInfo
+export default SellerInfo

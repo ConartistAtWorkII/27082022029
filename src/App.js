@@ -1,11 +1,11 @@
 import './App.css';
-import UserInfo from './components/UserInfo';
+import SellerInfo from './components/SellerInfo';
 import Comments from './components/Comments';
 
 function App() {
   return (
     <div className="main-container">
-      <UserInfo/>
+      <SellerInfo/>
       <Comments/>
     </div>
   );

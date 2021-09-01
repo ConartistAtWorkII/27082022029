@@ -9,6 +9,8 @@ function Comments() {
 
   let newEntries = entries
 
+  // Post the message with the current date attached.
+  // Reset the input field if the message contains only whitespace or is empty.
   const addEntry = () => {
     let messageCopy = message
     if (messageCopy == null ||
@@ -23,6 +25,7 @@ function Comments() {
         day: 'numeric'
       })
       let currentDate = now.substring(0, now.length - 3)
+
       newEntries.push({
         date: currentDate,
         user: "Аноним",
@@ -33,10 +36,12 @@ function Comments() {
     }
   }
 
+  // Write any user input to the state.
   const handleChange = (e) => {
     setMessage(e.target.value)
   }
 
+  // If Ctrl+Enter is pressed inside the input field, start the posting function.
   const handleKeyboard = (e) => {
     if ((e.metaKey || e.ctrlKey) && e.code === 'Enter') {
       addEntry()
